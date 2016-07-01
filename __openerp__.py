@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "online_store",
 
@@ -25,11 +24,14 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'templates.xml',
+        # 'static/style.less',
+        'views/templates.xml',
         'views/views.xml',
+        'views/assets.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo.xml',
     ],
 }
+# -*- coding: utf-8 -*-

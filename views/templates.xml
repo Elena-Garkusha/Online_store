@@ -1,0 +1,31 @@
+<openerp>
+    <data>
+        <template name="Store" id="index" page="True">
+            <t t-call="website.layout">
+                <t t-set ="title">Online_store</t>
+                        <div class="container">
+                            <h1>Our products</h1>
+                            <ul class="products">
+                                <table border="1" style="width:100%">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                    </tr>
+                                        <t t-foreach="products" t-as="product">
+                                            <tr>
+                                                 <td><t t-esc="product.id"/></td>
+                                                 <td><t t-esc="product.name"/></td>
+                                                <td><t t-esc="product.list_price"/></td>
+                                                <!--<t t-esc="product.category"/>-->
+                                            </tr>
+                                      </t>
+                                </table>
+                            </ul>
+                            <div class="oe_structure">
+                        </div>
+                    </div>
+                 </t>
+        </template>
+    </data>
+</openerp>
