@@ -5,26 +5,27 @@
                 <t t-set ="title">Online_store</t>
                         <div class="container">
                             <h1>Our products</h1>
-                            <ul class="products">
-                                <table border="1" style="width:100%">
+                            <table class="table table-condensed">
+                                <thead>
                                     <tr>
                                         <th>#</th>
                                         <th>Product</th>
                                         <th>Price</th>
                                     </tr>
+                                </thead>
                                         <t t-foreach="products" t-as="product">
+                                            <tbody>
                                             <tr>
                                                  <td><t t-esc="product.id"/></td>
                                                  <td><t t-esc="product.name"/></td>
-                                                <td><t t-esc="product.list_price"/></td>
-                                                <!--<t t-esc="product.category"/>-->
+                                                 <td><t t-esc="product.list_price"/></td>
+                                                 <td><button type="button" class="btn btn-success">Подтвердить заказ</button></td>
                                             </tr>
-                                      </t>
+                                      </tbody>
+                                </t>
                                 </table>
-                            </ul>
-                            <div class="oe_structure">
+                            <div class="oe_structure"/>
                         </div>
-                    </div>
                  </t>
         </template>
     </data>
