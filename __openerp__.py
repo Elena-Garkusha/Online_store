@@ -24,7 +24,13 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        # 'static/style.less',
+        # 'vendors/jquery/dist/jquery.min.js',
+        # 'vendors/bootstrap/dist/js/bootstrap.min.js',
+        # 'vendors/fastclick/lib/fastclick.js',
+        # 'vendors/nprogress/nprogress.js',
+        # 'vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js',
+        # 'build/js/custom.min.js',
+        # 'static/smile.jpg',
         'views/templates.xml',
         'views/views.xml',
         'views/assets.xml',
