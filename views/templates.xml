@@ -1,15 +1,18 @@
 <openerp>
     <data>
 
-      <template id="mystyle" name="My style" inherit_id="website.assets_frontend">
-        <xpath expr="link[last()]" position="after">
-        <link href="/online_store/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Font Awesome -->
-      <link href="/online_store/static/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <!-- NProgress -->
-      <link href="/online_store/static/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet" type="text/css"/>
-    <!-- Custom Theme Style -->
-      <link href="/online_store/static/gentelella/build/css/custom.min.css" rel="stylesheet" type="text/css"/>
+      <!--<template id="mystyle" name="My style" inherit_id="website.assets_frontend">-->
+        <!--<xpath expr="link[last()]" position="after">-->
+      <template id="assets_backend" name="static_resources_demo assets" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+          <link href="/online_store/static/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Font Awesome -->
+          <link href="/online_store/static/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <!-- NProgress -->
+          <link href="/online_store/static/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet" type="text/css"/>
+        <!-- Custom Theme Style -->
+          <link href="/online_store/static/gentelella/build/css/custom.min.css" rel="stylesheet" type="text/css"/>
+               <!--Bootstrap -->
       </xpath>
     </template>
 
@@ -17,7 +20,9 @@
             &lt;!DOCTYPE html&gt;
     <html lang="en">
     <head>
-        <t t-call-assets="website.assets_frontend"/>
+        <!--<t t-call-assets="website.assets_frontend"/>-->
+              <t t-call-assets="website.assets_frontend"/>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8"/>
@@ -51,7 +56,7 @@
             <!-- menu profile quick info -->
             <div class="profile">
               <div class="profile_pic">
-                <img src="/online_store/static/smile.jpg" alt="..." class="img-circle profile_img"/>
+                <img src=      "/online_store/static/smile.jpg" alt="..." class="img-circle profile_img"/>
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>

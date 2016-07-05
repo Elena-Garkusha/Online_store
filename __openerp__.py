@@ -34,6 +34,7 @@
         'views/templates.xml',
         'views/views.xml',
         'views/assets.xml',
+        'views/page2.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
