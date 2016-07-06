@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website', 'sale',],
+    'depends': ['base', 'website',],
 
     # always loaded
     'data': [
@@ -32,9 +32,10 @@
         # 'build/js/custom.min.js',
         # 'static/smile.jpg',
         'views/templates.xml',
-        'views/views.xml',
-        'views/assets.xml',
-        'views/page2.xml',
+        # 'views/views.xml',
+        # 'views/assets.xml',
+        # 'views/page2.xml',
+        'views/login_form.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

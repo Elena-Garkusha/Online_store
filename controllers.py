@@ -15,3 +15,8 @@ class OnlineStore(http.Controller):
         return http.request.render('online_store.page', {
             # 'products': Products.search([])
         })
+
+    @http.route('/login1', auth='public', website=True)
+    def login(self, **kw):
+        return http.request.render('online_store.login_form1', {
+        })
